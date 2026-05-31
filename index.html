@@ -3,695 +3,998 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COSRX Snail Mucin — العناية الكورية الفاخرة | الإمارات</title>
-    <meta name="description" content="منتجات COSRX Snail Mucin الأصلية — توصلك لين البيت في الإمارات. عرض خاص — اطلب الآن!">
-    
-    <!-- Fonts -->
+    <title>COSRX Snail Mucin | عناية كورية أصلية في الإمارات</title>
+    <meta name="description" content="مجموعة COSRX Snail Mucin الأصلية بسعر AED 199 مع شحن مجاني داخل الإمارات. اطلب عبر واتساب من Lady Globe FZC LLC.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         :root {
-            --green: #1a3c34;
-            --green-light: #2a5c4f;
-            --gold: #c4963c;
-            --cream: #f5f3ee;
+            --purple: #533afd;
+            --purple-hover: #4434d4;
+            --purple-deep: #2e2b8c;
+            --purple-light: #b9b9f9;
+            --navy: #061b31;
+            --brand-dark: #1c1e54;
+            --body: #64748d;
+            --label: #273951;
             --white: #ffffff;
-            --text: #2d2d2d;
-            --text-light: #666;
+            --border: #e5edf5;
+            --border-purple: #d6d9fc;
+            --green: #15be53;
+            --green-text: #108c3d;
+            --gold: #9b6829;
+            --ruby: #ea2261;
+            --magenta: #f96bee;
+            --shadow: rgba(50,50,93,0.25) 0 30px 45px -30px, rgba(0,0,0,0.1) 0 18px 36px -18px;
+            --shadow-soft: rgba(23,23,23,0.08) 0 15px 35px 0;
+            --shadow-small: rgba(23,23,23,0.06) 0 3px 6px;
         }
-        
-        body {
-            font-family: 'Cairo', sans-serif;
-            background: var(--cream);
-            color: var(--text);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-        
-        .english { font-family: 'Inter', sans-serif; }
-        
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, var(--green) 0%, #0d2620 100%);
-            color: white;
-            padding: 80px 24px 60px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle at 70% 30%, rgba(196,150,60,0.15) 0%, transparent 50%);
-            animation: pulse 6s ease-in-out infinite;
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
-        }
-        
-        .hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
-        
-        .hero-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.15);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 8px 24px;
-            border-radius: 50px;
-            font-size: 14px;
-            margin-bottom: 24px;
-            color: var(--gold);
-            font-weight: 600;
-        }
-        
-        .hero h1 {
-            font-size: clamp(32px, 6vw, 48px);
-            font-weight: 900;
-            margin-bottom: 16px;
-            line-height: 1.3;
-        }
-        
-        .hero h1 span { color: var(--gold); }
-        
-        .hero p {
-            font-size: 18px;
-            opacity: 0.9;
-            margin-bottom: 32px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .hero-features {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 36px;
-        }
-        
-        .hero-feature {
-            background: rgba(255,255,255,0.1);
-            padding: 10px 18px;
-            border-radius: 10px;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: var(--gold);
-            color: var(--green);
-            padding: 16px 40px;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: 800;
-            text-decoration: none;
-            transition: all 0.3s;
-            box-shadow: 0 8px 30px rgba(196,150,60,0.3);
-        }
-        
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(196,150,60,0.4);
-        }
-        
-        /* SECTION */
-        .section {
-            padding: 80px 24px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 48px;
-        }
-        
-        .section-title h2 {
-            font-size: clamp(28px, 5vw, 36px);
-            font-weight: 800;
-            color: var(--green);
-            margin-bottom: 12px;
-        }
-        
-        .section-title p {
-            color: var(--text-light);
-            font-size: 16px;
-        }
-        
-        .section-title .gold-line {
-            width: 60px;
-            height: 3px;
-            background: var(--gold);
-            margin: 16px auto;
-            border-radius: 2px;
-        }
-        
-        /* PRODUCTS */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-        }
-        
-        .product-card {
-            background: var(--white);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
-            transition: all 0.3s;
-            position: relative;
-        }
-        
-        .product-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-        }
-        
-        .product-card.featured {
-            border: 2px solid var(--gold);
-        }
-        
-        .product-card.featured::before {
-            content: 'الأكثر مبيعاً';
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            background: var(--gold);
-            color: white;
-            padding: 4px 14px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-            z-index: 2;
-        }
-        
-        .product-image {
-            height: 300px;
-            background: #f0f4f3;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s;
-        }
-        
-        .product-card:hover .product-image img {
-            transform: scale(1.05);
-        }
-        
-        .product-image .placeholder {
-            font-size: 64px;
-            opacity: 0.5;
-        }
-        
-        .product-image .label {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(26,60,52,0.8);
-            color: white;
-            text-align: center;
-            padding: 8px;
-            font-size: 13px;
-        }
-        
-        .product-info {
-            padding: 20px;
-        }
-        
-        .product-info h3 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--green);
-            margin-bottom: 8px;
-        }
-        
-        .product-info .product-subtitle {
-            font-size: 13px;
-            color: var(--text-light);
-            margin-bottom: 12px;
-        }
-        
-        .product-info .benefits {
-            list-style: none;
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
             padding: 0;
         }
-        
-        .product-info .benefits li {
-            font-size: 14px;
-            padding: 4px 0;
-            color: var(--text-light);
+
+        html {
+            scroll-behavior: smooth;
         }
-        
-        .product-info .benefits li::before {
-            content: '✓ ';
-            color: var(--green);
-            font-weight: 700;
-        }
-        
-        /* BENEFITS SECTION */
-        .benefits-section {
+
+        body {
             background: var(--white);
+            color: var(--body);
+            font-family: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            font-feature-settings: "ss01";
+            line-height: 1.4;
+            overflow-x: hidden;
+            text-align: right;
         }
-        
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 32px;
-            text-align: center;
+
+        img {
+            display: block;
+            max-width: 100%;
         }
-        
-        .benefit-card {
-            padding: 32px 20px;
+
+        a {
+            color: inherit;
+            text-decoration: none;
         }
-        
-        .benefit-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
-        
-        .benefit-card h3 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--green);
-            margin-bottom: 8px;
-        }
-        
-        .benefit-card p {
-            font-size: 14px;
-            color: var(--text-light);
-        }
-        
-        /* OFFER */
-        .offer-box {
-            background: linear-gradient(135deg, var(--green), var(--green-light));
-            color: white;
-            border-radius: 20px;
-            padding: 48px;
-            text-align: center;
+
+        .page {
             position: relative;
+            min-height: 100vh;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: rgba(255,255,255,0.88);
+            border-bottom: 1px solid rgba(229,237,245,0.8);
+            backdrop-filter: blur(16px);
+        }
+
+        .nav-inner {
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1080px;
+            padding: 14px 24px;
+        }
+
+        .brand {
+            color: var(--navy);
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: -0.18px;
+        }
+
+        .brand span {
+            color: var(--purple);
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 12px;
+            font-weight: 500;
+            margin-inline-start: 8px;
+        }
+
+        .nav-links {
+            align-items: center;
+            display: flex;
+            gap: 18px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--navy);
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .btn {
+            align-items: center;
+            border-radius: 4px;
+            display: inline-flex;
+            font-size: 16px;
+            font-weight: 400;
+            justify-content: center;
+            line-height: 1;
+            min-height: 38px;
+            padding: 8px 16px;
+            transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+        }
+
+        .btn-primary {
+            background: var(--purple);
+            box-shadow: rgba(50,50,93,0.25) 0 13px 27px -12px, rgba(0,0,0,0.1) 0 8px 16px -8px;
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--purple-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--purple-light);
+            color: var(--purple);
+        }
+
+        .btn-outline:hover {
+            background: rgba(83,58,253,0.05);
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1080px;
+            padding: 0 24px;
+        }
+
+        .hero {
+            overflow: hidden;
+            padding: 76px 0 72px;
+            position: relative;
+        }
+
+        .hero::before {
+            background: linear-gradient(135deg, rgba(83,58,253,0.12), rgba(249,107,238,0.12) 42%, rgba(21,190,83,0.06));
+            content: "";
+            height: 420px;
+            inset-inline: 0;
+            position: absolute;
+            top: -250px;
+            transform: skewY(-8deg);
+            transform-origin: 100% 0;
+        }
+
+        .hero-grid {
+            align-items: center;
+            display: grid;
+            gap: 48px;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+            position: relative;
+            z-index: 1;
+        }
+
+        .eyebrow {
+            align-items: center;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            box-shadow: var(--shadow-small);
+            color: var(--green-text);
+            display: inline-flex;
+            font-size: 12px;
+            font-weight: 400;
+            gap: 8px;
+            margin-bottom: 18px;
+            padding: 3px 8px;
+        }
+
+        .eyebrow::before {
+            background: var(--green);
+            border-radius: 50%;
+            content: "";
+            height: 7px;
+            width: 7px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--navy);
+            font-weight: 300;
+        }
+
+        h1 {
+            font-size: clamp(42px, 6.4vw, 56px);
+            letter-spacing: -1.4px;
+            line-height: 1.03;
+            max-width: 720px;
+        }
+
+        .hero-copy {
+            color: var(--body);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.55;
+            margin-top: 18px;
+            max-width: 610px;
+        }
+
+        .price-row {
+            align-items: baseline;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 14px;
+            margin-top: 26px;
+        }
+
+        .price {
+            color: var(--navy);
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.4px;
+        }
+
+        .old-price {
+            color: var(--body);
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 16px;
+            text-decoration: line-through;
+        }
+
+        .shipping {
+            background: rgba(21,190,83,0.2);
+            border: 1px solid rgba(21,190,83,0.4);
+            border-radius: 4px;
+            color: var(--green-text);
+            font-size: 12px;
+            padding: 2px 7px;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .hero-proof {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            margin-top: 36px;
+            max-width: 640px;
+        }
+
+        .proof-item {
+            border-right: 1px solid var(--border);
+            padding: 0 14px 0 0;
+        }
+
+        .proof-item strong {
+            color: var(--navy);
+            display: block;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: -0.18px;
+        }
+
+        .proof-item span {
+            color: var(--body);
+            display: block;
+            font-size: 13px;
+            margin-top: 2px;
+        }
+
+        .hero-media {
+            background: linear-gradient(180deg, #ffffff, #f8fbff);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            padding: 18px;
+            position: relative;
+        }
+
+        .hero-media::after {
+            background: linear-gradient(90deg, var(--ruby), var(--magenta), var(--purple));
+            content: "";
+            height: 3px;
+            inset-inline: 18px;
+            position: absolute;
+            top: 18px;
+        }
+
+        .bundle-frame {
+            align-items: center;
+            aspect-ratio: 0.83;
+            background: #f6f9fc;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
             overflow: hidden;
         }
-        
-        .offer-box::before {
-            content: '';
-            position: absolute;
-            top: -30%;
-            right: -20%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(196,150,60,0.2), transparent);
-            border-radius: 50%;
+
+        .bundle-frame img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
         }
-        
-        .offer-box h2 {
-            font-size: 32px;
-            font-weight: 800;
-            margin-bottom: 16px;
-            position: relative;
+
+        .media-caption {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 14px;
         }
-        
-        .offer-box .price {
-            font-size: 48px;
-            font-weight: 900;
-            color: var(--gold);
-            position: relative;
+
+        .media-caption p {
+            color: var(--navy);
+            font-size: 15px;
+            font-weight: 400;
         }
-        
-        .offer-box .price-old {
-            text-decoration: line-through;
-            opacity: 0.5;
-            font-size: 24px;
-            margin-right: 12px;
+
+        .media-caption span {
+            color: var(--body);
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 11px;
         }
-        
-        .offer-box p {
-            opacity: 0.8;
-            margin: 16px 0 32px;
-            position: relative;
+
+        section {
+            padding: 72px 0;
         }
-        
-        /* ABOUT */
-        .about-text {
-            max-width: 700px;
-            margin: 0 auto;
+
+        .section-head {
+            margin-bottom: 34px;
+            max-width: 690px;
+        }
+
+        .section-head.center {
+            margin-inline: auto;
             text-align: center;
-            font-size: 16px;
-            color: var(--text-light);
-            line-height: 2;
         }
-        
-        /* TESTIMONIALS */
-        .testimonials-grid {
+
+        .section-kicker {
+            color: var(--purple);
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 9px;
+        }
+
+        h2 {
+            font-size: clamp(30px, 4.2vw, 48px);
+            letter-spacing: -0.96px;
+            line-height: 1.15;
+        }
+
+        .section-head p {
+            color: var(--body);
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 12px;
+        }
+
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
+            gap: 18px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
         }
-        
-        .testimonial-card {
+
+        .product-card {
             background: var(--white);
-            border-radius: 16px;
-            padding: 28px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            overflow: hidden;
             position: relative;
+            transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease;
         }
-        
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 16px;
-            right: 24px;
-            font-size: 72px;
-            color: var(--gold);
-            opacity: 0.2;
-            font-family: serif;
-            line-height: 1;
+
+        .product-card:hover {
+            border-color: var(--border-purple);
+            box-shadow: var(--shadow);
+            transform: translateY(-3px);
         }
-        
-        .testimonial-card .stars {
-            color: var(--gold);
-            font-size: 16px;
-            margin-bottom: 12px;
+
+        .product-card.featured {
+            border-color: var(--purple-light);
         }
-        
-        .testimonial-card p {
+
+        .badge {
+            background: rgba(21,190,83,0.2);
+            border: 1px solid rgba(21,190,83,0.4);
+            border-radius: 4px;
+            color: var(--green-text);
+            display: inline-flex;
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 1.1;
+            padding: 3px 6px;
+        }
+
+        .product-image {
+            align-items: center;
+            aspect-ratio: 1;
+            background: #f6f9fc;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            height: 100%;
+            object-fit: cover;
+            transition: transform 220ms ease;
+            width: 100%;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.035);
+        }
+
+        .product-body {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 16px;
+        }
+
+        .product-top {
+            align-items: flex-start;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 22px;
+            letter-spacing: -0.22px;
+            line-height: 1.1;
+        }
+
+        .english-name {
+            color: var(--body);
+            direction: ltr;
+            font-size: 13px;
+            line-height: 1.25;
+            margin-top: 6px;
+            text-align: right;
+        }
+
+        .product-points {
+            color: var(--label);
+            display: grid;
             font-size: 14px;
-            color: var(--text-light);
-            margin-bottom: 16px;
+            gap: 6px;
+            list-style: none;
+            margin: 14px 0 18px;
         }
-        
-        .testimonial-card .author {
+
+        .product-points li {
+            align-items: center;
+            display: flex;
+            gap: 7px;
+        }
+
+        .product-points li::before {
+            background: var(--purple);
+            border-radius: 50%;
+            content: "";
+            flex: 0 0 5px;
+            height: 5px;
+            width: 5px;
+        }
+
+        .card-footer {
+            align-items: center;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin-top: auto;
+            padding-top: 14px;
+        }
+
+        .mini-price {
+            color: var(--navy);
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 15px;
             font-weight: 700;
-            color: var(--green);
-            font-size: 14px;
         }
-        
-        /* FAQ */
+
+        .benefits {
+            background: #f8fbff;
+            border-block: 1px solid var(--border);
+        }
+
+        .benefit-grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .benefit-card,
+        .quote-card,
         .faq-item {
             background: var(--white);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            box-shadow: var(--shadow-small);
+            padding: 22px;
         }
-        
-        .faq-item h3 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--green);
-            margin-bottom: 8px;
+
+        .benefit-icon {
+            align-items: center;
+            background: rgba(83,58,253,0.08);
+            border: 1px solid var(--border-purple);
+            border-radius: 4px;
+            color: var(--purple);
+            display: inline-flex;
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 13px;
+            height: 32px;
+            justify-content: center;
+            margin-bottom: 18px;
+            width: 38px;
         }
-        
+
+        .benefit-card h3,
+        .quote-card h3 {
+            font-size: 24px;
+            letter-spacing: -0.26px;
+        }
+
+        .benefit-card p,
+        .quote-card p,
         .faq-item p {
-            font-size: 14px;
-            color: var(--text-light);
+            color: var(--body);
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 9px;
         }
-        
-        /* FOOTER */
+
+        .testimonials {
+            background: var(--brand-dark);
+            color: var(--white);
+        }
+
+        .testimonials h2,
+        .testimonials h3 {
+            color: var(--white);
+        }
+
+        .testimonials .section-kicker,
+        .testimonials .section-head p {
+            color: #b9b9f9;
+        }
+
+        .quote-grid {
+            display: grid;
+            gap: 18px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .quote-card {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(185,185,249,0.22);
+            box-shadow: rgba(3,3,39,0.25) 0 24px 48px -24px;
+        }
+
+        .quote-card p {
+            color: rgba(255,255,255,0.78);
+        }
+
+        .stars {
+            color: var(--magenta);
+            direction: ltr;
+            font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 12px;
+            margin-bottom: 16px;
+            text-align: right;
+        }
+
+        .faq-grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .faq-item h3 {
+            font-size: 22px;
+        }
+
         .footer {
-            background: var(--green);
-            color: white;
-            text-align: center;
-            padding: 40px 24px;
+            background: #0d253d;
+            color: rgba(255,255,255,0.76);
+            padding: 34px 0;
+        }
+
+        .footer-inner {
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .footer strong {
+            color: var(--white);
+            display: block;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+
+        .footer p,
+        .footer a {
             font-size: 14px;
         }
-        
+
         .footer a {
-            color: var(--gold);
-            text-decoration: none;
+            color: #b9b9f9;
         }
-        
-        /* FLOATING CTA */
+
         .floating-cta {
+            bottom: 18px;
+            box-shadow: var(--shadow);
+            inset-inline-start: 18px;
             position: fixed;
-            bottom: 24px;
-            left: 24px;
-            right: 24px;
-            z-index: 100;
-            text-align: center;
-            pointer-events: none;
+            z-index: 30;
         }
-        
-        .floating-cta a {
-            pointer-events: all;
-            display: inline-block;
-            background: var(--gold);
-            color: var(--green);
-            padding: 14px 32px;
-            border-radius: 50px;
-            font-weight: 800;
-            text-decoration: none;
-            box-shadow: 0 4px 24px rgba(196,150,60,0.5);
-            animation: bounce 2s infinite;
+
+        @media (max-width: 980px) {
+            .hero-grid,
+            .products-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero-copy,
+            h1 {
+                max-width: none;
+            }
+
+            .hero-media {
+                grid-column: 1 / -1;
+                margin-inline: auto;
+                max-width: 430px;
+            }
+
+            .benefit-grid,
+            .quote-grid {
+                grid-template-columns: 1fr;
+            }
         }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-6px); }
-        }
-        
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            .hero { padding: 60px 16px 40px; }
-            .section { padding: 60px 16px; }
-            .products-grid { grid-template-columns: 1fr; }
-            .offer-box { padding: 32px 20px; }
-            .offer-box .price { font-size: 36px; }
-            .floating-cta { bottom: 16px; left: 16px; right: 16px; }
+
+        @media (max-width: 720px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-inner {
+                padding: 12px 18px;
+            }
+
+            .container {
+                padding: 0 18px;
+            }
+
+            .hero {
+                padding: 48px 0 54px;
+            }
+
+            .hero-grid,
+            .products-grid,
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 42px;
+                letter-spacing: -0.96px;
+            }
+
+            h2 {
+                font-size: 34px;
+                letter-spacing: -0.64px;
+            }
+
+            .hero-proof {
+                grid-template-columns: 1fr;
+            }
+
+            .proof-item {
+                border-right: 0;
+                border-top: 1px solid var(--border);
+                padding: 10px 0 0;
+            }
+
+            .footer-inner {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .floating-cta {
+                bottom: 12px;
+                inset-inline: 12px;
+            }
+
+            .floating-cta .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-badge">🇰🇷 عناية كورية أصلية 100%</div>
-        <h1>بشرة <span>ناعمة وصافية</span> بخلاصة حلزون<br>COSRX Snail Mucin</h1>
-        <p>حزمة متكاملة من 4 منتجات أساسية من COSRX — كل شي تحتاجه بشرتك في روتين واحد</p>
-        <img src="images/bundle.jpg" alt="COSRX Snail Mucin Bundle" style="max-width: 280px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.3);">
-        <div class="hero-features">
-            <div class="hero-feature">✨ ترطيب عميق</div>
-            <div class="hero-feature">🔬 إصلاح البشرة</div>
-            <div class="hero-feature">🌿 مكونات طبيعية</div>
-            <div class="hero-feature">🚚 توصيل الإمارات</div>
-        </div>
-        <a href="#order" class="cta-btn">🛒 اطلب حزمتك الآن</a>
-    </div>
-</section>
-
-<!-- PRODUCTS -->
-<section class="section" id="products">
-    <div class="section-title">
-        <h2>🛍️ محتويات الحزمة</h2>
-        <div class="gold-line"></div>
-        <p>حزمة العناية الكاملة — 4 منتجات أساسية</p>
-    </div>
-    <div class="products-grid">
-        <!-- Product 1 - Essence -->
-        <div class="product-card featured">
-            <div class="product-image">
-                <img src="images/essence.jpg" alt="COSRX Advanced Snail 96 Mucin Power Essence" style="width:100%; height:100%; object-fit:cover;">
-            </div>
-            <div class="product-info">
-                <h3>مصل الحلزون 96%</h3>
-                <p class="product-subtitle english">Advanced Snail 96 Mucin Power Essence</p>
-                <ul class="benefits">
-                    <li>ترميم خلايا البشرة التالفة</li>
-                    <li>ترطيب فائق للبشرة الجافة</li>
-                    <li>توحيد لون البشرة وإشراقة فورية</li>
+    <div class="page">
+        <nav class="nav" aria-label="التنقل الرئيسي">
+            <div class="nav-inner">
+                <a class="brand" href="#">COSRX <span>UAE</span></a>
+                <ul class="nav-links">
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#benefits">الفوائد</a></li>
+                    <li><a href="#faq">الأسئلة</a></li>
                 </ul>
+                <a class="btn btn-primary" href="https://wa.me/971565466960?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20COSRX%20%D8%A8%D8%B3%D8%B9%D8%B1%20199%20%D8%AF%D8%B1%D9%87%D9%85">اطلبي الآن</a>
             </div>
-        </div>
-        
-        <!-- Product 2 - Cream -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="images/cream.jpg" alt="COSRX Advanced Snail 92 All in One Cream" style="width:100%; height:100%; object-fit:cover;">
+        </nav>
+
+        <header class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow">الأكثر طلبا للعناية الكورية في الإمارات</div>
+                    <h1>روتين COSRX Snail Mucin لبشرة هادئة، مرطبة، وأكثر نضارة.</h1>
+                    <p class="hero-copy">مجموعة أصلية من منتجات الحلزون الكورية بملمس خفيف ونتيجة يومية عملية: ترطيب، تهدئة، دعم حاجز البشرة، ولمعان صحي بدون تعقيد.</p>
+                    <div class="price-row" aria-label="السعر">
+                        <span class="price">AED 199</span>
+                        <span class="old-price">AED 299</span>
+                        <span class="shipping">شحن مجاني داخل الإمارات</span>
+                    </div>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="https://wa.me/971565466960?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20COSRX%20%D8%A8%D8%B3%D8%B9%D8%B1%20199%20%D8%AF%D8%B1%D9%87%D9%85">اطلبي عبر واتساب</a>
+                        <a class="btn btn-outline" href="#products">شاهدي المنتجات</a>
+                    </div>
+                    <div class="hero-proof">
+                        <div class="proof-item">
+                            <strong>4 منتجات</strong>
+                            <span>روتين كامل للعناية اليومية</span>
+                        </div>
+                        <div class="proof-item">
+                            <strong>96% ميوسين</strong>
+                            <span>المصل البطل والأكثر مبيعا</span>
+                        </div>
+                        <div class="proof-item">
+                            <strong>الإمارات</strong>
+                            <span>توصيل سريع وشحن مجاني</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-media" aria-label="صورة مجموعة COSRX">
+                    <div class="bundle-frame">
+                        <img src="images/bundle.jpg" alt="مجموعة منتجات COSRX Snail Mucin">
+                    </div>
+                    <div class="media-caption">
+                        <p>مجموعة Snail Mucin</p>
+                        <span>عرض AED 199</span>
+                    </div>
+                </div>
             </div>
-            <div class="product-info">
-                <h3>كريم الحلزون 92%</h3>
-                <p class="product-subtitle english">Advanced Snail 92 All in One Cream</p>
-                <ul class="benefits">
-                    <li>إصلاح حاجز البشرة</li>
-                    <li>مقاومة التجاعيد والخطوط الدقيقة</li>
-                    <li>مناسب لكل أنواع البشرة</li>
-                </ul>
+        </header>
+
+        <main>
+            <section id="products">
+                <div class="container">
+                    <div class="section-head center">
+                        <div class="section-kicker">المنتجات</div>
+                        <h2>أربع خطوات واضحة لروتين يومي متوازن.</h2>
+                        <p>كل منتج يعمل بدور محدد داخل الروتين، مع المصل كبطل المجموعة والأكثر طلبا.</p>
+                    </div>
+
+                    <div class="products-grid">
+                        <article class="product-card featured">
+                            <div class="product-image">
+                                <img src="images/essence.jpg" alt="مصل الحلزون 96% من COSRX">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-top">
+                                    <div>
+                                        <h3>مصل الحلزون 96%</h3>
+                                        <p class="english-name">Advanced Snail 96 Mucin Power Essence</p>
+                                    </div>
+                                    <span class="badge">الأكثر مبيعا</span>
+                                </div>
+                                <ul class="product-points">
+                                    <li>ترطيب عميق بملمس خفيف</li>
+                                    <li>يدعم مظهر حاجز البشرة</li>
+                                    <li>خطوة أساسية قبل الكريم</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <span class="mini-price">AED 199</span>
+                                    <a class="btn btn-outline" href="https://wa.me/971565466960">اطلبي</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="images/cream.jpg" alt="كريم الحلزون 92% من COSRX">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-top">
+                                    <div>
+                                        <h3>كريم الحلزون 92%</h3>
+                                        <p class="english-name">Advanced Snail 92 All in One Cream</p>
+                                    </div>
+                                </div>
+                                <ul class="product-points">
+                                    <li>يختم الترطيب بعد المصل</li>
+                                    <li>ملمس مريح للاستخدام اليومي</li>
+                                    <li>يساعد على نعومة البشرة</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <span class="mini-price">ضمن العرض</span>
+                                    <a class="btn btn-outline" href="https://wa.me/971565466960">اطلبي</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="images/cleanser.jpg" alt="غسول الحلزون اللطيف من COSRX">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-top">
+                                    <div>
+                                        <h3>غسول الحلزون اللطيف</h3>
+                                        <p class="english-name">Advanced Snail Mucin Gel Cleanser</p>
+                                    </div>
+                                </div>
+                                <ul class="product-points">
+                                    <li>تنظيف لطيف بدون إحساس قاس</li>
+                                    <li>مناسب كبداية للروتين</li>
+                                    <li>يحافظ على إحساس الترطيب</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <span class="mini-price">ضمن العرض</span>
+                                    <a class="btn btn-outline" href="https://wa.me/971565466960">اطلبي</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="images/eye-cream.jpg" alt="كريم محيط العين من COSRX">
+                            </div>
+                            <div class="product-body">
+                                <div class="product-top">
+                                    <div>
+                                        <h3>كريم محيط العين</h3>
+                                        <p class="english-name">Advanced Snail Peptide Eye Cream</p>
+                                    </div>
+                                </div>
+                                <ul class="product-points">
+                                    <li>عناية موجهة لمنطقة العين</li>
+                                    <li>ملمس خفيف وسهل الدمج</li>
+                                    <li>يكمل روتين الترطيب اليومي</li>
+                                </ul>
+                                <div class="card-footer">
+                                    <span class="mini-price">ضمن العرض</span>
+                                    <a class="btn btn-outline" href="https://wa.me/971565466960">اطلبي</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" class="benefits">
+                <div class="container">
+                    <div class="section-head">
+                        <div class="section-kicker">الفوائد</div>
+                        <h2>نتيجة عملية بدون وعود مبالغ فيها.</h2>
+                        <p>تصميم الروتين يركز على الخطوات التي تحتاجها البشرة يوميا: تنظيف، ترطيب، تهدئة، وحماية إحساس الراحة.</p>
+                    </div>
+                    <div class="benefit-grid">
+                        <article class="benefit-card">
+                            <span class="benefit-icon">01</span>
+                            <h3>ترطيب ممتد</h3>
+                            <p>ميوسين الحلزون يساعد البشرة على الاحتفاظ بالترطيب، خصوصا عند استخدام المصل ثم الكريم.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <span class="benefit-icon">02</span>
+                            <h3>تهدئة وراحة</h3>
+                            <p>تركيبات خفيفة مناسبة للروتين اليومي وتمنح البشرة إحساسا أكثر هدوءا بعد التنظيف.</p>
+                        </article>
+                        <article class="benefit-card">
+                            <span class="benefit-icon">03</span>
+                            <h3>لمعان صحي</h3>
+                            <p>روتين متكامل يمنح مظهرا أنعم وأكثر نضارة مع الاستمرار، بدون طبقات ثقيلة.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <div class="section-head center">
+                        <div class="section-kicker">آراء العميلات</div>
+                        <h2>تجربة واضحة من أول أسبوع.</h2>
+                        <p>تعليقات مختصرة من عميلات طلبن المجموعة داخل الإمارات.</p>
+                    </div>
+                    <div class="quote-grid">
+                        <article class="quote-card">
+                            <div class="stars">★★★★★</div>
+                            <h3>البشرة صارت أهدأ</h3>
+                            <p>أكثر شيء حبيته أن المصل خفيف وما يترك طبقة مزعجة، والكريم ممتاز بعده.</p>
+                        </article>
+                        <article class="quote-card">
+                            <div class="stars">★★★★★</div>
+                            <h3>توصيل سريع</h3>
+                            <p>وصلني الطلب داخل الإمارات بسرعة، والتغليف كان مرتب والمنتجات نفس الصور.</p>
+                        </article>
+                        <article class="quote-card">
+                            <div class="stars">★★★★★</div>
+                            <h3>روتين سهل</h3>
+                            <p>أربع خطوات واضحة، وما احتجت أشتري منتجات كثيرة عشان أبدأ روتين كوري مرتب.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <div class="container">
+                    <div class="section-head center">
+                        <div class="section-kicker">الأسئلة الشائعة</div>
+                        <h2>كل ما تحتاجين معرفته قبل الطلب.</h2>
+                    </div>
+                    <div class="faq-grid">
+                        <article class="faq-item">
+                            <h3>هل السعر للمجموعة كاملة؟</h3>
+                            <p>نعم، العرض الحالي AED 199 بدلا من AED 299 للمجموعة، مع شحن مجاني داخل الإمارات.</p>
+                        </article>
+                        <article class="faq-item">
+                            <h3>كيف أطلب؟</h3>
+                            <p>اضغطي زر واتساب وسيتم فتح محادثة مباشرة على الرقم +971565466960 لتأكيد الطلب والتوصيل.</p>
+                        </article>
+                        <article class="faq-item">
+                            <h3>ما هو ترتيب الاستخدام؟</h3>
+                            <p>ابدئي بالغسول، ثم مصل الحلزون 96%، بعده كريم محيط العين، ثم كريم الحلزون 92%.</p>
+                        </article>
+                        <article class="faq-item">
+                            <h3>هل يناسب الاستخدام اليومي؟</h3>
+                            <p>نعم، صمم الروتين للاستخدام اليومي. اختبري أي منتج جديد على منطقة صغيرة إذا كانت بشرتك حساسة.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div>
+                    <strong>Lady Globe FZC LLC</strong>
+                    <p>عجمان، الإمارات العربية المتحدة</p>
+                </div>
+                <div>
+                    <p>للطلب والاستفسار: <a href="https://wa.me/971565466960">+971565466960</a></p>
+                </div>
             </div>
-        </div>
-        
-        <!-- Product 3 - Cleanser -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="images/cleanser.jpg" alt="COSRX Advanced Snail Mucin Gel Cleanser" style="width:100%; height:100%; object-fit:cover;">
-            </div>
-            <div class="product-info">
-                <h3>غسول الحلزون اللطيف</h3>
-                <p class="product-subtitle english">Advanced Snail Mucin Gel Cleanser</p>
-                <ul class="benefits">
-                    <li>تنظيف عميق بدون جفاف</li>
-                    <li>إزالة المكياج والشوائب</li>
-                    <li>يحافظ على ترطيب البشرة الطبيعي</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Product 4 - Eye Cream -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="images/eye-cream.jpg" alt="COSRX Advanced Snail Peptide Eye Cream" style="width:100%; height:100%; object-fit:cover;">
-            </div>
-            <div class="product-info">
-                <h3>كريم محيط العين</h3>
-                <p class="product-subtitle english">Advanced Snail Peptide Eye Cream</p>
-                <ul class="benefits">
-                    <li>تقليل الهالات السوداء والانتفاخ</li>
-                    <li>شد البشرة حول العين</li>
-                    <li>تركيبة غنية بالبيبتيدات والحلزون</li>
-                </ul>
-            </div>
-        </div><!-- BENEFITS -->
-<section class="section benefits-section" id="benefits" style="background: var(--white); border-radius: 0;">
-    <div class="section-title">
-        <h2>✨ ليش COSRX Snail Mucin؟</h2>
-        <div class="gold-line"></div>
-    </div>
-    <div class="benefits-grid">
-        <div class="benefit-card">
-            <div class="benefit-icon">🇰🇷</div>
-            <h3>كوري أصلي 100%</h3>
-            <p>من المصنع مباشرة — مو تقليد</p>
-        </div>
-        <div class="benefit-card">
-            <div class="benefit-icon">🔬</div>
-            <h3>مُثبت علمياً</h3>
-            <p>مكونات snail mucin مُختبرة سريرياً</p>
-        </div>
-        <div class="benefit-card">
-            <div class="benefit-icon">🌿</div>
-            <h3>خالي من المواد الضارة</h3>
-            <p>بدون بارابين، كبريتات، أو عطور صناعية</p>
-        </div>
-        <div class="benefit-card">
-            <div class="benefit-icon">🚚</div>
-            <h3>توصيل سريع للإمارات</h3>
-            <p>خلال 2-3 أيام عمل</p>
-        </div>
-    </div>
-</section>
+        </footer>
 
-<!-- TESTIMONIALS -->
-<section class="section">
-    <div class="section-title">
-        <h2>⭐ آراء العملاء</h2>
-        <div class="gold-line"></div>
-    </div>
-    <div class="testimonials-grid">
-        <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"حرفياً أفضل روتين عناية جربته. بشرتي صارت أنعم بكتير بعد أسبوعين بس من الاستخدام."</p>
-            <div class="author">— منى، دبي 🇦🇪</div>
-        </div>
-        <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"الـ jade roller مع المصل — مزيج خرافي! وجهي صار مشدود والمسامات أصغر بشكل واضح."</p>
-            <div class="author">— سارة، أبوظبي 🇦🇪</div>
-        </div>
-        <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p>"كنت أعاني من حب الشباب والتصبغات… منتجات COSRX غيرت بشرتي بالكامل. أنصح فيها بقوة!"</p>
-            <div class="author">— فاطمة، الشارقة 🇦🇪</div>
+        <div class="floating-cta">
+            <a class="btn btn-primary" href="https://wa.me/971565466960?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20COSRX%20%D8%A8%D8%B3%D8%B9%D8%B1%20199%20%D8%AF%D8%B1%D9%87%D9%85">اطلبي الآن عبر واتساب</a>
         </div>
     </div>
-</section>
-
-<!-- PRICING / OFFER -->
-<section class="section" id="order">
-    <div class="offer-box">
-        <h2>🎁 عرض الإطلاق الحصري</h2>
-        <p>الحزمة الكاملة — 4 منتجات COSRX Snail Mucin:</p>
-        <div class="price">
-            <span class="price-old">AED 299</span>
-            AED 199
-        </div>
-        <p style="font-size: 14px;">+ توصيل مجاني لجميع الإمارات</p>
-        <a href="https://wa.me/971565466960?text=السلام عليكم، مهتم بحزمة COSRX Snail Mucin" class="cta-btn" style="background: white; color: var(--green);">📱 اطلب عبر واتساب</a>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section class="section" id="faq">
-    <div class="section-title">
-        <h2>❓ أسئلة شائعة</h2>
-        <div class="gold-line"></div>
-    </div>
-    <div class="faq-item">
-        <h3>هل المنتجات أصلية؟</h3>
-        <p>✅ نعم، جميع منتجاتنا أصلية 100% ومستوردة مباشرة من كوريا. نضمن أصالة كل منتج.</p>
-    </div>
-    <div class="faq-item">
-        <h3>هل ينفع لكل أنواع البشرة؟</h3>
-        <p>👍 نعم، Snail Mucin مناسب لجميع أنواع البشرة: الدهنية، الجافة، المختلطة، والحساسة.</p>
-    </div>
-    <div class="faq-item">
-        <h3>متى رح توصلني الطلبية؟</h3>
-        <p>🚚 التوصيل خلال 2-3 أيام عمل لجميع إمارات الدولة. التوصيل مجاني!</p>
-    </div>
-    <div class="faq-item">
-        <h3>كم مرة أستخدم المنتجات؟</h3>
-        <p>🕐 المصل والكريم: صباحاً ومساءً. الغسول: صباحاً ومساءً. كريم العيون: مساءً فقط. النتائج تظهر خلال أسبوعين.</p>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <p style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Lady Globe FZC LLC</p>
-    <p>منتجات COSRX الأصلية في الإمارات</p>
-    <p style="margin-top: 12px; opacity: 0.7;">📞 <a href="tel:+971565466960">056 654 6960</a> • 📧 <a href="mailto:Wajih422@gmail.com">Wajih422@gmail.com</a></p>
-    <p style="margin-top: 24px; opacity: 0.5; font-size: 12px;">© 2026 Lady Globe FZC LLC. جميع الحقوق محفوظة.</p>
-</footer>
-
-<!-- FLOATING CTA -->
-<div class="floating-cta" id="floatCta">
-    <a href="https://wa.me/971565466960?text=السلام عليكم، مهتم بحزمة COSRX Snail Mucin">📱 اطلب عبر واتساب — AED 199 فقط</a>
-</div>
-
-<script>
-    // Hide floating CTA when near offer section
-    window.addEventListener('scroll', function() {
-        var floatCta = document.getElementById('floatCta');
-        var offerSection = document.getElementById('order');
-        var rect = offerSection.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            floatCta.style.opacity = '0';
-        } else {
-            floatCta.style.opacity = '1';
-        }
-    });
-</script>
-
 </body>
 </html>
