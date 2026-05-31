@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSRX Snail Mucin — العناية الكورية الفاخرة | الإمارات</title>
+    <meta name="description" content="منتجات COSRX Snail Mucin الأصلية مع Jade Roller. توصلك لين البيت في الإمارات. عرض خاص — اطلب الآن!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --green: #1a3c34;
+            --green-light: #2a5c4f;
+            --gold: #c4963c;
+            --cream: #f5f3ee;
+            --white: #ffffff;
+            --text: #2d2d2d;
+            --text-light: #666;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        .english { font-family: 'Inter', sans-serif; }
+        
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--green) 0%, #0d2620 100%);
+            color: white;
+            padding: 80px 24px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 70% 30%, rgba(196,150,60,0.15) 0%, transparent 50%);
+            animation: pulse 6s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 24px;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .hero h1 {
+            font-size: clamp(32px, 6vw, 48px);
+            font-weight: 900;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        
+        .hero h1 span { color: var(--gold); }
+        
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 32px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-features {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+        
+        .hero-feature {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--green);
+            padding: 16px 40px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 30px rgba(196,150,60,0.3);
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(196,150,60,0.4);
+        }
+        
+        /* SECTION */
+        .section {
+            padding: 80px 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .section-title h2 {
+            font-size: clamp(28px, 5vw, 36px);
+            font-weight: 800;
+            color: var(--green);
+            margin-bottom: 12px;
+        }
+        
+        .section-title p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+        
+        .section-title .gold-line {
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 16px auto;
+            border-radius: 2px;
+        }
+        
+        /* PRODUCTS */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+        }
+        
+        .product-card.featured {
+            border: 2px solid var(--gold);
+        }
+        
+        .product-card.featured::before {
+            content: 'الأكثر مبيعاً';
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--gold);
+            color: white;
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            z-index: 2;
+        }
+        
+        .product-image {
+            height: 240px;
+            background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image .placeholder {
+            font-size: 64px;
+            opacity: 0.5;
+        }
+        
+        .product-image .label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(26,60,52,0.8);
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 13px;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+        
+        .product-info .product-subtitle {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        
+        .product-info .benefits {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .product-info .benefits li {
+            font-size: 14px;
+            padding: 4px 0;
+            color: var(--text-light);
+        }
+        
+        .product-info .benefits li::before {
+            content: '✓ ';
+            color: var(--green);
+            font-weight: 700;
+        }
+        
+        /* BENEFITS SECTION */
+        .benefits-section {
+            background: var(--white);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+        
+        .benefit-card {
+            padding: 32px 20px;
+        }
+        
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+        
+        .benefit-card p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        
+        /* OFFER */
+        .offer-box {
+            background: linear-gradient(135deg, var(--green), var(--green-light));
+            color: white;
+            border-radius: 20px;
+            padding: 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-box::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(196,150,60,0.2), transparent);
+            border-radius: 50%;
+        }
+        
+        .offer-box h2 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        
+        .offer-box .price {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--gold);
+            position: relative;
+        }
+        
+        .offer-box .price-old {
+            text-decoration: line-through;
+            opacity: 0.5;
+            font-size: 24px;
+            margin-right: 12px;
+        }
+        
+        .offer-box p {
+            opacity: 0.8;
+            margin: 16px 0 32px;
+            position: relative;
+        }
+        
+        /* ABOUT */
+        .about-text {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 2;
+        }
+        
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 16px;
+            right: 24px;
+            font-size: 72px;
+            color: var(--gold);
+            opacity: 0.2;
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-card .stars {
+            color: var(--gold);
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        
+        .testimonial-card p {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-card .author {
+            font-weight: 700;
+            color: var(--green);
+            font-size: 14px;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+        }
+        
+        .faq-item h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+        
+        .faq-item p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+        
+        /* FOOTER */
+        .footer {
+            background: var(--green);
+            color: white;
+            text-align: center;
+            padding: 40px 24px;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        
+        /* FLOATING CTA */
+        .floating-cta {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+            z-index: 100;
+            text-align: center;
+            pointer-events: none;
+        }
+        
+        .floating-cta a {
+            pointer-events: all;
+            display: inline-block;
+            background: var(--gold);
+            color: var(--green);
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 4px 24px rgba(196,150,60,0.5);
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero { padding: 60px 16px 40px; }
+            .section { padding: 60px 16px; }
+            .products-grid { grid-template-columns: 1fr; }
+            .offer-box { padding: 32px 20px; }
+            .offer-box .price { font-size: 36px; }
+            .floating-cta { bottom: 16px; left: 16px; right: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">🇰🇷 عناية كورية أصلية 100%</div>
+        <h1>بشرة <span>ناعمة وصافية</span> بخلاصة حلزون<br>COSRX Snail Mucin</h1>
+        <p>حزمة متكاملة من 4 منتجات أساسية + Jade Roller — كل شي تحتاجه بشرتك في علبة وحدة</p>
+        <div class="hero-features">
+            <div class="hero-feature">✨ ترطيب عميق</div>
+            <div class="hero-feature">🔬 إصلاح البشرة</div>
+            <div class="hero-feature">🌿 مكونات طبيعية</div>
+            <div class="hero-feature">🚚 توصيل الإمارات</div>
+        </div>
+        <a href="#order" class="cta-btn">🛒 اطلب حزمتك الآن</a>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+    <div class="section-title">
+        <h2>🛍️ محتويات الحزمة</h2>
+        <div class="gold-line"></div>
+        <p>4 منتجات أساسية + Jade Roller احترافي</p>
+    </div>
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card featured">
+            <div class="product-image">
+                <div class="placeholder">🧴</div>
+                <span class="label english">COSRX Advanced Snail 96</span>
+            </div>
+            <div class="product-info">
+                <h3>مصل الحلزون 96%</h3>
+                <p class="product-subtitle english">Advanced Snail 96 Mucin Power Essence</p>
+                <ul class="benefits">
+                    <li>ترميم خلايا البشرة التالفة</li>
+                    <li>ترطيب فائق للبشرة الجافة</li>
+                    <li>توحيد لون البشرة</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <div class="placeholder">🧪</div>
+                <span class="label english">COSRX Snail 92 Cream</span>
+            </div>
+            <div class="product-info">
+                <h3>كريم الحلزون 92%</h3>
+                <p class="product-subtitle english">Advanced Snail 92 All in One Cream</p>
+                <ul class="benefits">
+                    <li>إصلاح حاجز البشرة</li>
+                    <li>مقاومة التجاعيد والخطوط</li>
+                    <li>مناسب لكل أنواع البشرة</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <div class="placeholder">🧼</div>
+                <span class="label english">COSRX Low pH Cleanser</span>
+            </div>
+            <div class="product-info">
+                <h3>غسول لطيف pH منخفض</h3>
+                <p class="product-subtitle english">Low pH Good Morning Gel Cleanser</p>
+                <ul class="benefits">
+                    <li>تنظيف عميق بدون جفاف</li>
+                    <li>موازنة حموضة البشرة</li>
+                    <li>منع حب الشباب</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-image">
+                <div class="placeholder">💧</div>
+                <span class="label english">COSRX Snail Mucin Sheet Mask</span>
+            </div>
+            <div class="product-info">
+                <h3>أقنعة الحلزون (10 قطع)</h3>
+                <p class="product-subtitle english">Advanced Snail Mucin Power Sheet Masks</p>
+                <ul class="benefits">
+                    <li>علاج مكثف أسبوعي</li>
+                    <li>نضارة فورية</li>
+                    <li>تهدئة البشرة الحساسة</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Jade Roller -->
+        <div class="product-card">
+            <div class="product-image" style="background: linear-gradient(135deg, #f3e5f5, #fce4ec);">
+                <div class="placeholder">💎</div>
+                <span class="label english">Jade Roller</span>
+            </div>
+            <div class="product-info">
+                <h3>Jade Roller احترافي</h3>
+                <p class="product-subtitle english">Authentic Jade Face Roller</p>
+                <ul class="benefits">
+                    <li>تحسين امتصاص المنتجات</li>
+                    <li>شد البشرة وتقليل الانتفاخ</li>
+                    <li>جودة عالية — حجر اليشم الطبيعي</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section benefits-section" id="benefits" style="background: var(--white); border-radius: 0;">
+    <div class="section-title">
+        <h2>✨ ليش COSRX Snail Mucin؟</h2>
+        <div class="gold-line"></div>
+    </div>
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <div class="benefit-icon">🇰🇷</div>
+            <h3>كوري أصلي 100%</h3>
+            <p>من المصنع مباشرة — مو تقليد</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">🔬</div>
+            <h3>مُثبت علمياً</h3>
+            <p>مكونات snail mucin مُختبرة سريرياً</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>خالي من المواد الضارة</h3>
+            <p>بدون بارابين، كبريتات، أو عطور صناعية</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">🚚</div>
+            <h3>توصيل سريع للإمارات</h3>
+            <p>خلال 2-3 أيام عمل</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+    <div class="section-title">
+        <h2>⭐ آراء العملاء</h2>
+        <div class="gold-line"></div>
+    </div>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"حرفياً أفضل روتين عناية جربته. بشرتي صارت أنعم بكتير بعد أسبوعين بس من الاستخدام."</p>
+            <div class="author">— منى، دبي 🇦🇪</div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"الـ jade roller مع المصل — مزيج خرافي! وجهي صار مشدود والمسامات أصغر بشكل واضح."</p>
+            <div class="author">— سارة، أبوظبي 🇦🇪</div>
+        </div>
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"كنت أعاني من حب الشباب والتصبغات… منتجات COSRX غيرت بشرتي بالكامل. أنصح فيها بقوة!"</p>
+            <div class="author">— فاطمة، الشارقة 🇦🇪</div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING / OFFER -->
+<section class="section" id="order">
+    <div class="offer-box">
+        <h2>🎁 عرض الإطلاق الحصري</h2>
+        <p>حزمة COSRX Snail Mucin الكاملة:</p>
+        <div class="price">
+            <span class="price-old">AED 599</span>
+            AED 399
+        </div>
+        <p style="font-size: 14px;">+ توصيل مجاني لجميع الإمارات</p>
+        <a href="https://wa.me/971565466960?text=السلام عليكم، مهتم بحزمة COSRX Snail Mucin" class="cta-btn" style="background: white; color: var(--green);">📱 اطلب عبر واتساب</a>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+    <div class="section-title">
+        <h2>❓ أسئلة شائعة</h2>
+        <div class="gold-line"></div>
+    </div>
+    <div class="faq-item">
+        <h3>هل المنتجات أصلية؟</h3>
+        <p>✅ نعم، جميع منتجاتنا أصلية 100% ومستوردة مباشرة من كوريا. نضمن أصالة كل منتج.</p>
+    </div>
+    <div class="faq-item">
+        <h3>هل ينفع لكل أنواع البشرة؟</h3>
+        <p>👍 نعم، Snail Mucin مناسب لجميع أنواع البشرة: الدهنية، الجافة، المختلطة، والحساسة.</p>
+    </div>
+    <div class="faq-item">
+        <h3>متى رح توصلني الطلبية؟</h3>
+        <p>🚚 التوصيل خلال 2-3 أيام عمل لجميع إمارات الدولة. التوصيل مجاني!</p>
+    </div>
+    <div class="faq-item">
+        <h3>كيف أستخدم Jade Roller؟</h3>
+        <p>💎 بعد وضع المصل، مرّري الـ Jade Roller من الداخل للخارج بحركات صاعدة. استخدميه 5 دقائق يومياً.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Lady Globe FZC LLC</p>
+    <p>منتجات COSRX الأصلية في الإمارات</p>
+    <p style="margin-top: 12px; opacity: 0.7;">📞 <a href="tel:+971565466960">056 654 6960</a> • 📧 <a href="mailto:Wajih422@gmail.com">Wajih422@gmail.com</a></p>
+    <p style="margin-top: 24px; opacity: 0.5; font-size: 12px;">© 2026 Lady Globe FZC LLC. جميع الحقوق محفوظة.</p>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta" id="floatCta">
+    <a href="https://wa.me/971565466960?text=السلام عليكم، مهتم بحزمة COSRX Snail Mucin">📱 اطلب عبر واتساب — AED 399 فقط</a>
+</div>
+
+<script>
+    // Hide floating CTA when near offer section
+    window.addEventListener('scroll', function() {
+        var floatCta = document.getElementById('floatCta');
+        var offerSection = document.getElementById('order');
+        var rect = offerSection.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            floatCta.style.opacity = '0';
+        } else {
+            floatCta.style.opacity = '1';
+        }
+    });
+</script>
+
+</body>
+</html>
