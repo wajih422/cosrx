@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COSRX Snail Mucin — العناية الكورية الفاخرة | الإمارات</title>
-    <meta name="description" content="منتجات COSRX Snail Mucin الأصلية مع Jade Roller. توصلك لين البيت في الإمارات. عرض خاص — اطلب الآن!">
+    <meta name="description" content="منتجات COSRX Snail Mucin الأصلية — توصلك لين البيت في الإمارات. عرض خاص — اطلب الآن!">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,13 +201,24 @@
         }
         
         .product-image {
-            height: 240px;
-            background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+            height: 300px;
+            background: #f0f4f3;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
             overflow: hidden;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
         }
         
         .product-image .placeholder {
@@ -480,7 +491,8 @@
     <div class="hero-content">
         <div class="hero-badge">🇰🇷 عناية كورية أصلية 100%</div>
         <h1>بشرة <span>ناعمة وصافية</span> بخلاصة حلزون<br>COSRX Snail Mucin</h1>
-        <p>حزمة متكاملة من 4 منتجات أساسية + Jade Roller — كل شي تحتاجه بشرتك في علبة وحدة</p>
+        <p>حزمة متكاملة من 4 منتجات أساسية من COSRX — كل شي تحتاجه بشرتك في روتين واحد</p>
+        <img src="images/bundle.jpg" alt="COSRX Snail Mucin Bundle" style="max-width: 280px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 8px 30px rgba(0,0,0,0.3);">
         <div class="hero-features">
             <div class="hero-feature">✨ ترطيب عميق</div>
             <div class="hero-feature">🔬 إصلاح البشرة</div>
@@ -496,14 +508,13 @@
     <div class="section-title">
         <h2>🛍️ محتويات الحزمة</h2>
         <div class="gold-line"></div>
-        <p>4 منتجات أساسية + Jade Roller احترافي</p>
+        <p>حزمة العناية الكاملة — 4 منتجات أساسية</p>
     </div>
     <div class="products-grid">
-        <!-- Product 1 -->
+        <!-- Product 1 - Essence -->
         <div class="product-card featured">
             <div class="product-image">
-                <div class="placeholder">🧴</div>
-                <span class="label english">COSRX Advanced Snail 96</span>
+                <img src="images/essence.jpg" alt="COSRX Advanced Snail 96 Mucin Power Essence" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div class="product-info">
                 <h3>مصل الحلزون 96%</h3>
@@ -511,82 +522,58 @@
                 <ul class="benefits">
                     <li>ترميم خلايا البشرة التالفة</li>
                     <li>ترطيب فائق للبشرة الجافة</li>
-                    <li>توحيد لون البشرة</li>
+                    <li>توحيد لون البشرة وإشراقة فورية</li>
                 </ul>
             </div>
         </div>
         
-        <!-- Product 2 -->
+        <!-- Product 2 - Cream -->
         <div class="product-card">
             <div class="product-image">
-                <div class="placeholder">🧪</div>
-                <span class="label english">COSRX Snail 92 Cream</span>
+                <img src="images/cream.jpg" alt="COSRX Advanced Snail 92 All in One Cream" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div class="product-info">
                 <h3>كريم الحلزون 92%</h3>
                 <p class="product-subtitle english">Advanced Snail 92 All in One Cream</p>
                 <ul class="benefits">
                     <li>إصلاح حاجز البشرة</li>
-                    <li>مقاومة التجاعيد والخطوط</li>
+                    <li>مقاومة التجاعيد والخطوط الدقيقة</li>
                     <li>مناسب لكل أنواع البشرة</li>
                 </ul>
             </div>
         </div>
         
-        <!-- Product 3 -->
+        <!-- Product 3 - Cleanser -->
         <div class="product-card">
             <div class="product-image">
-                <div class="placeholder">🧼</div>
-                <span class="label english">COSRX Low pH Cleanser</span>
+                <img src="images/cleanser.jpg" alt="COSRX Advanced Snail Mucin Gel Cleanser" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div class="product-info">
-                <h3>غسول لطيف pH منخفض</h3>
-                <p class="product-subtitle english">Low pH Good Morning Gel Cleanser</p>
+                <h3>غسول الحلزون اللطيف</h3>
+                <p class="product-subtitle english">Advanced Snail Mucin Gel Cleanser</p>
                 <ul class="benefits">
                     <li>تنظيف عميق بدون جفاف</li>
-                    <li>موازنة حموضة البشرة</li>
-                    <li>منع حب الشباب</li>
+                    <li>إزالة المكياج والشوائب</li>
+                    <li>يحافظ على ترطيب البشرة الطبيعي</li>
                 </ul>
             </div>
         </div>
         
-        <!-- Product 4 -->
+        <!-- Product 4 - Eye Cream -->
         <div class="product-card">
             <div class="product-image">
-                <div class="placeholder">💧</div>
-                <span class="label english">COSRX Snail Mucin Sheet Mask</span>
+                <img src="images/eye-cream.jpg" alt="COSRX Advanced Snail Peptide Eye Cream" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div class="product-info">
-                <h3>أقنعة الحلزون (10 قطع)</h3>
-                <p class="product-subtitle english">Advanced Snail Mucin Power Sheet Masks</p>
+                <h3>كريم محيط العين</h3>
+                <p class="product-subtitle english">Advanced Snail Peptide Eye Cream</p>
                 <ul class="benefits">
-                    <li>علاج مكثف أسبوعي</li>
-                    <li>نضارة فورية</li>
-                    <li>تهدئة البشرة الحساسة</li>
+                    <li>تقليل الهالات السوداء والانتفاخ</li>
+                    <li>شد البشرة حول العين</li>
+                    <li>تركيبة غنية بالبيبتيدات والحلزون</li>
                 </ul>
             </div>
-        </div>
-        
-        <!-- Jade Roller -->
-        <div class="product-card">
-            <div class="product-image" style="background: linear-gradient(135deg, #f3e5f5, #fce4ec);">
-                <div class="placeholder">💎</div>
-                <span class="label english">Jade Roller</span>
-            </div>
-            <div class="product-info">
-                <h3>Jade Roller احترافي</h3>
-                <p class="product-subtitle english">Authentic Jade Face Roller</p>
-                <ul class="benefits">
-                    <li>تحسين امتصاص المنتجات</li>
-                    <li>شد البشرة وتقليل الانتفاخ</li>
-                    <li>جودة عالية — حجر اليشم الطبيعي</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- BENEFITS -->
+        </div><!-- BENEFITS -->
 <section class="section benefits-section" id="benefits" style="background: var(--white); border-radius: 0;">
     <div class="section-title">
         <h2>✨ ليش COSRX Snail Mucin؟</h2>
@@ -645,7 +632,7 @@
 <section class="section" id="order">
     <div class="offer-box">
         <h2>🎁 عرض الإطلاق الحصري</h2>
-        <p>حزمة COSRX Snail Mucin الكاملة:</p>
+        <p>الحزمة الكاملة — 4 منتجات COSRX Snail Mucin:</p>
         <div class="price">
             <span class="price-old">AED 299</span>
             AED 199
@@ -674,8 +661,8 @@
         <p>🚚 التوصيل خلال 2-3 أيام عمل لجميع إمارات الدولة. التوصيل مجاني!</p>
     </div>
     <div class="faq-item">
-        <h3>كيف أستخدم Jade Roller؟</h3>
-        <p>💎 بعد وضع المصل، مرّري الـ Jade Roller من الداخل للخارج بحركات صاعدة. استخدميه 5 دقائق يومياً.</p>
+        <h3>كم مرة أستخدم المنتجات؟</h3>
+        <p>🕐 المصل والكريم: صباحاً ومساءً. الغسول: صباحاً ومساءً. كريم العيون: مساءً فقط. النتائج تظهر خلال أسبوعين.</p>
     </div>
 </section>
 
