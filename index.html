@@ -652,6 +652,18 @@
             color: #b9b9f9;
         }
 
+        .footer-legal-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 8px;
+        }
+
+        .footer-legal-links a {
+            font-size: 13px;
+        }
+
         .floating-cta {
             bottom: 18px;
             box-shadow: var(--shadow);
@@ -729,6 +741,10 @@
             .footer-inner {
                 align-items: flex-start;
                 flex-direction: column;
+            }
+
+            .footer-legal-links {
+                justify-content: flex-start;
             }
 
             .floating-cta {
@@ -999,6 +1015,12 @@
                 </div>
                 <div>
                     للطلب والاستفسار: <a href="https://wa.me/971501369382" dir="ltr" style="unicode-bidi: isolate;">+971 50 136 9382</a>
+                    <div class="footer-legal-links">
+                        <a href="terms-conditions.html">الشروط والأحكام</a>
+                        <a href="privacy-policy.html">سياسة الخصوصية</a>
+                        <a href="return-refund-policy.html">الاسترجاع والاسترداد</a>
+                        <a href="shipping-policy.html">الشحن والتوصيل</a>
+                    </div>
                 </div>
             </div>
         </footer>
